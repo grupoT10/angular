@@ -1,0 +1,25 @@
+<div class="container">
+    <h3>Lista de cursos de la ELP</h3>
+    <div class="text-end">
+        <button class="btn btn-primary" routerLink="/admin/curso/nuevo"> Nuevo Curso</button>
+    </div>
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>CODIGO DE CURSO</th>
+                <th>NOMBRE DEL CURSO</th>
+                <th>CICLO ACADEMICO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let curso of curso">
+                <td>{{ curso.id }}</td>
+                <td>{{ curso.codcurso }}</td>
+                <td>{{ curso.nomcurso }}</td>
+                <td>{{ curso.ciclo }}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
